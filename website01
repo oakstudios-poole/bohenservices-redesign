@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BOHEN Services Ltd</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --green:#88C86F;
+  --green-dark:#5DA848;
+  --blue:#2D5F8E;
+  --orange:#F39A12;
+  --dark:#0f172a;
+  --light:#f8fafc;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:white;
+  color:var(--dark);
+  overflow-x:hidden;
+}
+
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+
+.navbar{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:1.4rem;
+  font-weight:800;
+  color:var(--blue);
+}
+
+.logo span{
+  color:var(--green-dark);
+}
+
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--green-dark);
+}
+
+.hero{
+  min-height:100vh;
+
+  background:
+  radial-gradient(circle at top right,
+  rgba(136,200,111,.3),
+  transparent 40%),
+
+  radial-gradient(circle at bottom left,
+  rgba(45,95,142,.15),
+  transparent 40%),
+
+  white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  padding:140px 20px 80px;
+}
+
+.hero-content{
+  max-width:850px;
+}
+
+.badge{
+  display:inline-block;
+  background:#ecfdf5;
+  color:var(--green-dark);
+  padding:12px 20px;
+  border-radius:40px;
+  font-weight:700;
+  margin-bottom:25px;
+}
+
+.hero h1{
+  font-size:4.8rem;
+  line-height:1;
+  margin-bottom:25px;
+}
+
+.hero h1 span{
+  color:var(--green-dark);
+}
+
+.hero p{
+  font-size:1.2rem;
+  color:#475569;
+  max-width:700px;
+  margin:auto;
+  line-height:1.8;
+}
+
+.hero-buttons{
+  margin-top:40px;
+}
+
+.btn{
+  display:inline-block;
+  padding:16px 30px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  margin:8px;
+}
+
+.btn-primary{
+  background:var(--orange);
+  color:white;
+}
+
+.btn-secondary{
+  background:var(--green);
+  color:white;
+}
+
+.section{
+  padding:100px 20px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.section-title{
+  text-align:center;
+  font-size:3rem;
+  margin-bottom:15px;
+}
+
+.section-subtitle{
+  text-align:center;
+  color:#64748b;
+  margin-bottom:60px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  border-radius:24px;
+  padding:35px;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+  border-top:6px solid var(--green);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card-icon{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.card h3{
+  margin-bottom:15px;
+  color:var(--blue);
+}
+
+.card p{
+  color:#64748b;
+  line-height:1.8;
+}
+
+.green-section{
+  background:linear-gradient(
+  135deg,
+  #ecfdf5,
+  #ffffff
+  );
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="navbar">
+
+<div class="logo">
+BOHEN <span>Services</span>
+</div>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+Trusted Across Poole, Bournemouth & Christchurch
+</div>
+
+<h1>
+Keeping Homes
+<span>Running Smoothly</span>
+</h1>
+
+<p>
+Professional plumbing, heating and property maintenance services delivered with quality workmanship, honest advice and exceptional customer care.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-primary">
+Get Free Quote
+</a>
+
+<a href="tel:07872301729" class="btn btn-secondary">
+Emergency Call Out
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="services">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Services
+</h2>
+
+<p class="section-subtitle">
+Everything your home needs from one trusted local company.
+</p>
+
+<div class="services">
+
+<div class="card">
+
+<div class="card-icon">💧</div>
+
+<h3>Plumbing</h3>
+
+<p>
+Repairs, leaks, installations and emergency plumbing solutions.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">🔥</div>
+
+<h3>Heating</h3>
+
+<p>
+Boiler servicing
+
+<p>
+Reliable maintenance solutions for homes and businesses.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
